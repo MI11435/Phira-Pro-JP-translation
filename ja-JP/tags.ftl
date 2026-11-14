@@ -1,0 +1,15 @@
+filter = タグで絞り込む
+edit = タグを編集
+invalid-tag = 無効なタグ
+wanted = 含めるタグ
+unwanted = 含めたくないタグ
+cancel = キャンセル
+confirm = 確認
+filter-by-rating = 評価で絞り込む
+regular = 通常
+troll = トロール
+plain = 単純配置
+visual = 鑑賞
+filter-me = アップロードした譜面
+filter-unreviewed = 審査待ち
+filter-stabilize = stable審査待ち
