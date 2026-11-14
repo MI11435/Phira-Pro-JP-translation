@@ -1,0 +1,52 @@
+
+del-confirm = Delete
+del-confirm-content = This action is irreversable.  Press "Confirm" to continue.
+
+cancel = Cancel
+confirm = Confirm
+
+release-to-refresh = Release to refresh.
+
+switch-on = On
+switch-off = Off
+
+chart-ranked = Ranked
+chart-special = Special
+chart-unstable = Unstable
+
+list-empty = Nothing here.
+
+tos-and-policy = ToS & Privacy Policy
+tos-and-policy-desc = You must read and accept the Terms of Service and Privacy Policy before using Phira's online services.
+tos-deny = Deny
+tos-accept = Accept
+tos-link-terms = Terms of Service
+tos-link-privacy = Privacy Policy
+loading_tos_policy = Loading the ToS and Privacy Policy…
+fetch-tos-policy-failed = Failed to fetch Terms of Service and Privacy Policy.
+warn-deny-tos-policy = You must accept to use Phira's online services.
+
+open-in-web = View in Web
+
+main-character-name = Shee
+main-character-intro = To be added.
+
+favorites = Favorites
+default-fav-folder = Favorites
+favorites-online-only = Only online charts can be added to online favorites. Local charts: { $charts }
+
+contains-banned-words = Your input contains banned words. Please check and submit again.
+
+hykb-not-bound-logout = Your account is not bound to a 3839 Games account; you have been logged out.
+hykb-login-cancelled = 3839 Games login cancelled.
+hykb-account-mismatch = The signed-in 3839 Games account does not match this account. You have been logged out.
+
+crash-title = Phira stopped unexpectedly
+crash-message = The game encountered an unexpected error and can no longer continue safely. You can export recent logs to help diagnose the problem.
+crash-summary = Error: { $error }
+crash-log-retention = Logs from the last seven days are kept. Account credentials and cached resources are not included.
+crash-export = Export logs
+crash-exit = Exit safely
+crash-exporting = Preparing logs...
+crash-exported = Logs are ready to share.
+crash-export-failed = Failed to export logs

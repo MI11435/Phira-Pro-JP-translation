@@ -1,0 +1,459 @@
+
+label = SETTINGS
+
+general = General
+audio = Audio
+chart = Chart
+debug = Debug
+about = Info
+
+item-lang = Language
+item-appearance = Appearance
+item-appearance-sub = Custom icon, background and illustration
+item-appearance-open = Open
+item-appearance-import = Custom illustration
+item-appearance-import-btn = Import
+item-appearance-imported = Illustration imported
+item-ui-theme = UI theme
+item-ui-theme-sub = Accent and surface colours for the app interface
+theme-blue = Phira Blue
+theme-violet = Violet
+theme-emerald = Emerald
+theme-sunset = Sunset
+theme-rose = Rose
+theme-graphite = Graphite
+item-limit-perfect-plus = Perfect+ window
+item-limit-perfect = Perfect window
+item-limit-good = Good window
+item-limit-bad = Bad window
+item-hp-mode = Health bar
+item-hp-mode-sub = The run ends when the bar reaches 0
+item-hp-amount = Damage multiplier
+item-hp-width = Bar length
+item-auto-retry = Auto retries
+item-auto-retry-sub = Restart the run automatically after a failure (0 disables)
+item-retry-lead = Retry lead-in
+item-retry-lead-sub = Restart this many seconds before the failure (0 starts over)
+item-practice-ramp = Speed ramp
+item-practice-ramp-sub = Raise the speed after each practice loop
+item-practice-speed = Start speed
+item-practice-step = Step per loop
+item-hp-height = Bar thickness
+item-fullscreen = Fullscreen Mode
+item-offline = Offline Mode
+item-offline-sub = Disable all online functionality.
+item-server-status = Server Status
+item-server-status-sub = Open the server status page in your browser.
+check-status = Open
+item-lowq = Low Resolution Mode
+item-lowq-sub = Lower the quality of the UI, increasing peformance.
+item-clear-cache = Clear Cache
+item-cache-size-loading = Loading…
+item-cache-size = Cache size: { $size }
+item-clear-cache-btn = Clear
+item-cache-cleared = Cache cleared
+item-android-logs = Automatic diagnostic logs
+item-android-logs-sub = Download/PhiraPro/logs; Clear Cache also removes old logs
+item-insecure = Insecure Connection
+item-insecure-sub = Enable old devices to use online functionality.
+item-enable-anys = Enable Anys
+item-enable-anys-sub = Use an Anys gateway to improve network stability.
+item-anys-gateway = Anys Gateway
+item-anys-gateway-sub = Use a custom Anys gateway address.
+item-anys-gateway-invalid = Invalid gateway address.
+
+item-adjust = Automatic Time Adjustment
+item-adjust-sub = Adjust the audio and chart offset dynamically.
+item-music = Music Volume
+item-sfx = SFX Volume
+item-bgm = BGM Volume
+item-cali = Adjust Offset
+item-preferred-sample-rate = Preferred Sample Rate
+preferred-sample-rate-default = System Default
+item-audio-buffer-size = Audio Buffer Size
+
+item-show-acc = Real-Time Accuracy
+item-show-avg-fps = Show AVG FPS
+item-show-avg-fps-sub = Display the average FPS on the results screen.
+item-ap-fc-indicator = AP/FC Indicator
+item-ap-fc-indicator-sub = Use line color to indicate AP/FC status.
+item-dc-pause = Double-Tap to Pause
+item-dhint = Simultaneous Hint
+item-dhint-sub = Highlight notes that are meant to be hit at the same time.
+item-opt = Chart Optimization
+item-opt-sub = Significantly increase peformance while playing. (If unintended behavior arises, disable this.)
+item-use-keyboard = Use Keyboard
+item-use-keyboard-sub = Enable keyboard input for gameplay. Scores cannot be uploaded when enabled.
+item-prefer-reduced-motion = Prefer Reduced Motion
+item-prefer-reduced-motion-sub = Reduce animations and visual effects
+item-speed = Chart Rate
+item-note-size = Note Size
+
+item-chart-debug = Show Line ID
+item-chart-debug-sub = Display the IDs and orientation of lines.
+item-show-fps = Show FPS
+item-show-fps-sub = Show the current framerate at your chosen position
+item-touch-debug = Show Touch Points
+item-touch-debug-sub = Display user touch points.
+item-touch-color = Touch Point Color
+item-touch-color-sub = Open the palette to choose any touch color
+item-touch-alpha = Touch Point Opacity
+item-touch-size = Touch Point Size
+item-reset-settings = Reset All Settings
+item-reset-settings-sub = Restore every option on this page to its default value.
+item-reset-settings-btn = Reset
+reset-settings-title = Reset All Settings
+reset-settings-text = Every option on the settings page (language, theme, judgement / gameplay, debug, ...) will be restored to its default. Your account, charts, scores and imported resources are kept.
+reset-settings-done = Settings restored to defaults
+reset-settings-cancel = Cancel
+reset-settings-confirm = Confirm
+item-export-logs = Export Logs
+item-export-logs-sub = Export logs from the last seven days as a ZIP archive for feedback.
+item-export-logs-button = Export
+log-exporting = Exporting logs…
+log-export-failed = Failed to export logs
+
+load-cali-failed = Failed to load calibration audio.
+
+item-refresh-rate = Refresh Rate
+item-refresh-rate-sub = Choose the requested display refresh rate
+item-refresh-rate-max = Max: { $rate } Hz
+
+about-content =
+  Phira Pro v{ $version }
+
+  Phira is a non-commercial community-driven rhythm game inspired by Phigros.
+
+  This is an unofficial player-run project, with no relationship of license, partnership, or operation with Pigeon Games Co., Ltd. or the official Phigros team.
+
+  Phira Pro is a third-party, non-commercial modification based on the official Phira.
+
+  BiliBili Account: @Phira官方
+  QQ Guild: r48eajexth
+  Discord Server: discord.gg/gqpR3bTSsP
+
+  We recommend joining either the QQ guild or the Discord server to get live updates and receive assistance.
+
+  Staff List (sorted lexicographically)
+  Development
+  { $development }
+
+  Operations
+  { $operations }
+
+  Documentation
+  { $documentation }
+
+  Art
+  { $art }
+
+  Music
+  { $music }
+
+  Audio
+  { $audio }
+
+  Community Management
+  { $community }
+
+  Localization
+  { $localization }
+
+  Phira Pro Revision
+  Maintenance
+  { $revision }
+
+  And many more voluntary chart reviewers. For a full list please refer to https://phira.moe/staff .
+
+item-drag-protect = Drag Protection
+item-drag-protect-sub = While a tap / hold is early, a drag at least 10ms closer to the current time intercepts one tap per drag note.
+item-flick-protect = Flick Protection
+item-flick-protect-sub = While a tap / hold is early, a flick at least 10ms closer can intercept repeated taps; tapping does not judge the flick.
+item-combo-text = Combo Label
+item-combo-text-sub = The text shown under the combo counter in game (up to 16 characters)
+combo-text-default = Default
+item-late-leniency = Late Leniency
+item-late-leniency-sub = Subtracts this much from late hits when judging; 0 = symmetric with early
+item-judge-chart = Judgement Chart
+item-judge-chart-sub = Draw a judgement timing distribution chart on the ending screen (early <- -> late)
+item-hp-scale = Health Bar Rate
+item-hp-color = Health Bar Color
+item-history = Score History
+item-history-sub = Every play saved locally: list / trend / PB comparison / judgement distribution / import & export
+item-history-open = Open
+item-debug-line = Line Debug
+item-debug-line-sub = Show ID / height / z-index next to each line; lines that would be hidden stay as faint ghosts
+item-debug-note = Note Debug
+item-debug-note-sub = Show moving Perfect+ / Perfect / Good / Bad timing bands, projected using the actual scroll speed
+item-legacy-hold = Legacy Hold rendering
+item-legacy-hold-sub = Use the original official-chart Hold length for resource pack compatibility. Re-enter the chart to apply.
+item-rpen-software = RPEN software rendering
+item-rpen-software-sub = Enable if the editor looks black but still responds to taps. Reopen the editor to apply. Some preview effects may be limited.
+item-font = Custom Font
+item-font-sub = Import a ttf/otf file as the UI font. *Takes effect after a restart*
+import-font = Import
+item-font-reset = Reset Font
+item-font-reset-sub = Delete the imported font and use the built-in one again. *Takes effect after a restart*
+font-reset-btn = Reset
+font-imported = Font imported; restart the app to apply
+font-import-failed = Failed to import the font
+font-reset-done = Built-in font restored; restart the app to apply
+item-blacklist = Player Blacklist
+item-blacklist-sub = Hide these Phira IDs from every local leaderboard and user list
+item-blacklist-open = Manage
+item-hold-tail-judge = Hold Tail Judgement
+item-hold-tail-judge-sub = Judge both ends of a hold (head + tail), like osu!mania; the offset bar shows twice
+judge-window-invalid = Enter a number
+item-hud = HUD Customization
+item-hud-sub = Drag the components of the main menu, library and settings to reposition and resize them
+item-hud-open = Manage
+item-transfer = Data migration
+item-transfer-sub = Import charts and settings from official Phira
+transfer-open = Open
+item-backup = Backup & restore
+item-backup-sub = Back up or restore local data
+backup-open = Open
+transfer-label = Data migration
+transfer-desc = Select the data.json inside the official Phira data folder to import its charts, skins, fonts and appearance.
+transfer-pick = Select data.json
+transfer-import = Start import
+transfer-import-config = Also import settings
+transfer-scan = Found { $charts } charts, { $respacks } skins, { $appearance } appearance files
+transfer-done = Import complete ({ $charts } charts, { $respacks } skins, { $appearance } appearance). Please restart Phira Pro to load them.
+transfer-unsupported = Not supported on this platform yet
+transfer-failed = Operation failed
+backup-label = Backup & restore
+backup-desc = Back up data to ZIP. Preview and select content and file conflict handling before restoring. Restart after restoring settings.
+backup-create = Back up to file
+backup-restore = Restore from backup
+backup-created = Backup complete: { $count } files
+backup-restored = Restore complete: { $count } files. Please restart Phira Pro.
+transfer-working = Working…
+
+item-api-url = API Endpoint
+item-api-url-sub = Custom API base URL (login / charts / scores). Leave empty to use the official server. Must start with http(s)://; restart to apply.
+
+item-status-url = Server Status Page
+item-web-url-sub = Web frontend base (chart / user / collection pages, policy links). Leave empty for the official site. Must start with http(s)://.
+item-url-invalid = Invalid URL (must start with http:// or https://)
+item-status-url-sub = URL opened by the "Server Status" button in settings. Leave empty for the official page. Must start with http(s)://.
+item-web-url = Web Frontend
+
+
+item-flow-speed = Note Flow Speed
+item-flow-speed-sub = Scales only the notes' scrolling speed; the music and its pitch stay untouched. Scores are not eligible for upload.
+item-fade-strength = Fade In/Out Strength
+item-fade-strength-sub = Opaque cover height: 10% to 90% of the playfield. Customize its color or cropped image under Experience.
+aspect-official = Official
+item-custom-aspect = Custom Play Aspect Ratio
+item-custom-aspect-sub = Override the aspect ratio stored in the chart
+item-aspect-ratio = Play Aspect Ratio
+item-aspect-ratio-sub = Supports 16:9 or a decimal like 1.7778
+aspect-invalid = Invalid aspect ratio, e.g. 16:9 or 1.7778
+item-offset-indicator = Offset Indicator
+item-offset-indicator-sub = Shows the early/late judgement offset bar in game
+
+item-app-icon = App Icon
+item-app-icon-sub = Change the app icon. *Takes effect after restart*
+item-app-icon-reset = Reset icon
+item-app-bg = Background
+item-app-bg-sub = Change the main screen background
+item-app-bg-reset = Reset background
+item-appearance-import-sub = The character at the bottom-left of the main screen (transparent PNG recommended)
+item-appearance-reset = Reset character
+item-app-icon-imported = Icon imported - restart to apply
+item-app-icon-reset-done = Default icon restored - restart to apply
+item-app-bg-imported = Background imported
+item-app-bg-reset-done = Default background restored
+item-app-bgm = Background music
+item-app-bgm-sub = Change the main screen background music
+item-app-bgm-reset = Reset background music
+item-app-bgm-imported = Background music imported
+item-app-bgm-reset-done = Default background music restored
+item-appearance-reset-done = Default character restored
+
+migrate-label = Import My Played Charts
+migrate-desc = Scan the official chart leaderboards for charts you have a score on, then download the matching ones (with no filter it scans every chart, which is slow)
+migrate-min-diff = Min Level
+migrate-min-rating = Min Rating
+migrate-unlimited = Any
+migrate-ranked-only = Rated only
+migrate-skip = Skip downloaded
+migrate-start = Start import
+migrate-cancel = Cancel
+migrate-fetching = Fetching your scores from the official server...
+migrate-searching-meta = Fetching chart info...
+migrate-none = No chart matches the filters
+migrate-progress = Downloading { $done }/{ $total }: { $name }
+migrate-done = Done: { $ok } succeeded, { $failed } failed
+migrate-imported = Imported { $count } chart(s)
+migrate-need-login = Please sign in to the official server first
+
+migrate-enumerating = Listing charts ({ $pages } pages)...
+migrate-checking = Checking your scores { $done }/{ $total }...
+
+chart-import-label = Batch Import Charts
+chart-import-desc = Import a zip produced by the official client's batch export (a single chart pack also works); imported charts show up in your local library right away
+chart-import-btn = Choose file & import
+item-block-simple = Simple block areas
+item-block-simple-sub = Draw translucent ranges only; disable noise, touch effects and music filtering. Judgement is unchanged.
+item-line-elision = Transparent line elision
+item-line-elision-sub = Skip fully transparent ordinary judge lines when they cannot change the frame. Visual quality is unchanged; debug views and custom materials keep the original path.
+
+experience = Experience
+font-display-size = Font display size
+font-smallest = Smallest · 80%
+font-smaller = Smaller · 90%
+font-medium = Medium · 100%
+font-larger = Larger · 110%
+font-largest = Largest · 120%
+theoretical-score = Theoretical score
+theoretical-score-sub = Gameplay and results: +1 per Perfect+. Stored and uploaded scores stay unchanged.
+uniform-loudness = Match music loudness
+uniform-loudness-sub = Match menu, preview and gameplay levels with peak headroom. SFX remain independent.
+uniform-level = Unified music volume
+fixed-background = Fixed background dimming
+background-dim = Background dimming · 0.00–1.00
+background-invalid = Enter a finite number between 0.00 and 1.00.
+upper-cover-color = Upper cover color
+lower-cover-color = Lower cover color
+upper-cover-image = Upper cover image
+lower-cover-image = Lower cover image
+cover-import = Import image
+cover-reset = Restore black cover
+cover-editor = Cover editor
+cover-crop-help = Drag to position · Zoom to crop · Dashed: minimum · Solid: maximum
+cover-cancel = Cancel
+cover-apply = Apply
+
+item-shader-pre-render = Shader pre-rendering
+item-shader-pre-render-sub = Warms shaders and caches static block masks while loading. Slower loading; frame-rate gains vary with the chart.
+judgement-presets = Judgement
+preset-phigros = Phigros judgement
+preset-pro = Phira Pro judgement
+preset-phigros-short = Phigros
+preset-pro-short = Phira Pro
+preset-current = Current custom settings
+preset-select = Judgement preset
+preset-select-sub = Edit below to save current settings automatically; presets store reusable combinations
+preset-add = Add preset
+preset-edit = Edit preset
+preset-copy = Copy as new preset
+preset-delete = Delete preset
+preset-delete-sub = Removes the saved entry; keeps current judgement values
+preset-name = Preset name
+preset-name-empty = Enter a name
+preset-name-invalid = Use 1–32 characters without newlines or control characters.
+preset-name-duplicate = A preset already uses this name.
+preset-algorithm = Judgement algorithm
+preset-save = Save and use
+preset-cancel = Discard changes
+preset-flash = Flash uses fixed judgement and has no custom presets.
+preset-number-0 = Perfect+ (ms)
+preset-number-1 = Perfect (ms)
+preset-number-2 = Good (ms)
+preset-number-3 = Bad (ms)
+preset-number-4 = Late leniency (ms)
+preset-number-5 = Drag window (ms)
+preset-number-6 = Flick window / Perfect
+preset-number-7 = Tap / Hold half-width (world units)
+preset-number-8 = Drag / Flick half-width (world units)
+preset-number-9 = Bad shrink start (world units)
+preset-number-10 = Matching vertical divisor
+preset-number-11 = Matching time gap (ms)
+preset-number-12 = Initial Hold release protection
+preset-number-13 = Hold early completion (ms)
+preset-number-14 = Unstarted Hold late-tail Miss (ms)
+preset-number-15 = Drag / Flick early scoring (ms)
+preset-number-16 = Strict Perfect base window (ms)
+preset-number-17 = Strict Good base window (ms)
+preset-number-18 = Strict Bad base window (ms)
+preset-number-19 = Flick base speed
+preset-number-20 = Flick reference DPI
+preset-number-21 = Flick time normalization (Hz)
+preset-number-22 = Flick speed multiplier
+preset-number-23 = Flick minimum projection delta (world units)
+preset-switch-0 = Drag protection
+preset-switch-1 = Flick protection
+preset-switch-2 = Global strict judgement
+preset-switch-3 = Fullscreen judgement
+preset-switch-4 = Remove combo score
+preset-switch-5 = Separate Hold tail (extension)
+preset-switch-6 = Strict ten-frame compensation
+preset-switch-7 = Sparse-chart late Bad behavior
+
+preset-number-24 = Bad shrink / Perfect factor
+preset-number-25 = Screen DPI override (0 = auto)
+preset-dpi = Automatic screen DPI
+preset-dpi-sub = Android reads physical DPI; other platforms use a fallback, which you can override
+
+judgement-settings = Judgement settings
+judgement-settings-sub = Edit grades, windows and matching rules; save reusable presets
+judgement-open = Open
+preset-early = Early (−)
+preset-late = Late (+)
+preset-windows = Timing windows
+preset-rules = Matching and protection
+
+preset-detailed = Detailed judgement
+preset-switch-8 = Perfect+ judgement
+preset-switch-9 = Extended grades (GREAT / OK / MEH)
+preset-number-26 = GREAT window
+preset-number-27 = OK window
+preset-number-28 = MEH window
+theoretical-score-disabled = Enable Perfect+ in judgement settings first
+
+preset-od = osu!mania ScoreV2 OD timing shortcut
+preset-od-custom = Custom
+preset-od-sub = ScoreV2 symmetric windows, Perfect+ off; extended OD -15 to 15
+
+replays-settings = Replay files
+replays-settings-sub = Import, export, match charts and watch replays
+
+item-fps-position = FPS position
+fps-top-center = Top center
+fps-bottom-center = Bottom center
+fps-top-left = Top left
+fps-top-right = Top right
+fps-bottom-left = Bottom left
+fps-bottom-right = Bottom right
+
+plugins-settings = Plugins
+plugins-settings-sub = Import, enable and configure plugins
+preset-colors = Judgement colors
+preset-colors-sub = Choose any color with the palette; reset follows resource-pack colors
+preset-color-default = Resource pack
+
+item-desktop-fps = Frame rate limit
+item-desktop-fps-sub = Applies immediately; follows display refresh rate by default
+item-desktop-fps-auto = Follow display
+
+color-original = Original
+color-current = Current
+color-reset = Reset
+color-reset-all = Reset all
+color-invalid = Enter six hexadecimal digits, e.g. #12AB34
+color-rgb-invalid = Enter an integer from 0 to 255
+color-current-default = Current (default)
+
+practice-debug-display = Diagnostic display
+practice-debug-performance = Frame rate
+practice-debug-input = Touch visualization
+
+item-show-judgement-details = Show judgement counts
+item-show-judgement-details-sub = Show live counts below the score and accuracy for the active preset
+item-show-perfect-combo = Show Perfect Combo
+item-show-perfect-combo-sub = Count consecutive Perfect+ / Perfect only; other grades reset the display, without changing scoring
+
+item-gameplay-background-blur = Gameplay background blur
+
+item-fps-unlimited = Unlimited
+
+item-early-late = Early/Late feedback
+item-early-late-sub = Brief timing feedback for non-Perfect hits with a measured offset
+item-early-late-position = Feedback position
+item-early-late-indicator = Below offset indicator
+item-early-late-bottom = Bottom of playfield
+
+item-font-atlas-pool = Pooled font atlas
+item-font-atlas-pool-sub = Rotate glyph-atlas versions so HUD text never overwrites the texture the GPU is still sampling. Pixels and layout are unchanged. Disable this only when diagnosing text rendering; feedback is welcome.
