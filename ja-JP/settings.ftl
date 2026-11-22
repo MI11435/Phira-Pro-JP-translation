@@ -439,6 +439,8 @@ item-show-perfect-combo = Perfect Combo表示
 item-show-perfect-combo-sub = Perfect+ と Perfect のみでコンボを数えます。それ以外の判定で表示上のコンボが途切れますが、スコアには影響しません。
 item-gameplay-background-blur = ゲームプレイ中の背景をぼやかす
 item-fps-unlimited = 無制限
+item-timing-offset = 判定タイミングの数値表示
+item-timing-offset-sub = 直近の打鍵のずれとプレイ中の平均をミリ秒で表示します。
 item-early-late = Early/Late 表示
 item-early-late-sub = Perfect+ / Perfect 以外の有効な判定で、入力が早いと Early、遅いと Late を表示します。
 item-early-late-position = 表示位置
@@ -448,6 +450,7 @@ item-font-atlas-pool = フォントアトラスの切り替え
 item-font-atlas-pool-sub = HUD テキスト更新時の引っかかりと長いフレームを減らします。平均フレームレートの向上は端末と HUD 更新頻度によりますが、低スペック端末ではカクつきの改善が分かりやすいです。見た目とレイアウトは変わりません。既定でオン。
 item-effect-render-optimized = エフェクト描画の最適化
 item-effect-render-optimized-sub = シェーダーと全画面合成の負荷を減らします。エフェクトが多い譜面ほど効果があり、通常の譜面では向上が限定的です。オフにすると元のシェーダーに戻ります。シェーダー/マテリアルの変更は譜面の再読み込み後に反映されます。
+
 performance = パフォーマンス
 performance-quality = 画質
 performance-fps = フレームレートとリフレッシュレート
@@ -467,6 +470,7 @@ item-noise-refraction-sub = 判定線のノイズ屈折。オフにするとフ�
 item-sample-count = アンチエイリアスサンプル
 item-sample-count-sub = 1× / 2× / 4×。高いほど滑らかになりますが GPU 負荷が大きくなります。この項目は性能への影響が特に大きいです。
 item-fxaa = FXAA
+
 item-aa = アンチエイリアス
 item-aa-sub = 輪郭を滑らかにしますが、特に性能への影響が大きい項目です。低スペック端末ではオフ、または FXAA のみを推奨します。
 item-aa-off = オフ

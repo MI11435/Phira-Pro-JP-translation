@@ -128,11 +128,14 @@ mods-strict-judge-sub = 只对本曲启用；与全局严判同时开启不叠�
 mods-strict-global-on = 全局严判已生效；本曲开关不会关闭全局严判，也不会再次缩小区间
 mods-fullscreen-judge = 全屏判定
 mods-fullscreen-judge-sub = 点击屏幕任意位置都能判定到最近的音符
+mods-milthm = Milthm 判定模式
+mods-milthm-sub = 每根 Hold 需要点击条头，点中后可以共用一个触点续按。成绩仅保存在本地
 mods-no-fail = 无伤模式
 mods-no-fail-sub = 失败只记录，不中断本局
 
 rate-failed = 评分失败
 rate-done = 评分成功
+rate-pro-score-required = 请先完成游玩并将这张谱面的成绩提交到 Pro 服务器
 
 need-update = 谱面更新
 need-update-info-only-content = 谱面信息已更新，需要现在同步这些信息吗？
