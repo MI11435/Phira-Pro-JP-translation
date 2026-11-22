@@ -252,12 +252,14 @@ item-offset-indicator-sub = プレイ中に早/遅のずれを示すバーを表
 item-timing-offset = 判定タイミングの数値表示
 item-timing-offset-sub = 直近の打鍵のずれとプレイ中の平均をミリ秒で表示します。
 item-app-icon = アプリアイコン
-item-app-icon-window-sub = 导入图片作为窗口图标，重启后生效
-item-app-icon-launcher-sub = 切换应用内置的桌面图标
-item-app-icon-switch = 切换
-item-app-icon-applied = 应用图标已更新
-item-app-icon-shortcut = 自定义桌面快捷方式
-item-app-icon-shortcut-done = 已请求添加快捷方式，如有提示请在桌面确认
+item-app-icon-window-sub = ウィンドウ用の画像をインポートし、再起動することで適用します
+item-app-icon-launcher-sub = アプリアイコンを変更します
+item-app-icon-switch = 切り替え
+item-app-icon-applied = アプリアイコンを更新しました
+item-app-icon-shortcut = ホーム画面のカスタムショートカット
+item-app-icon-shortcut-done =
+    ショートカットの作成をします
+    ホーム画面で承認を求められた場合は承認してください
 item-app-icon-sub = アプリアイコンを変更。*再起動後に反映*
 item-app-icon-reset = アイコンを初期化
 item-app-bg = 背景画像／動画
