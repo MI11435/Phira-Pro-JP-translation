@@ -117,51 +117,51 @@ item-refresh-rate-max = 最大：{ $rate } Hz
 about-content =
     Phira Pro v{ $version }
       Phira v{ $version }
-
+    
       PhiraはPhigrosにインスパイアされた非商業のコミュニティ主導のリズムゲームです。
-
+    
       本プロジェクトは非公式のプレイヤーによるプロジェクトであり、南京鸽游网络有限公司（Pigeon Games）および『Phigros』公式とは、許諾・協力・運営のいずれの関係も一切存在しません。
-
+    
     Phira Pro は公式 Phira を基にした非営利の非公式派生版です。
-
+    
     BiliBiliアカウント: @Phira官方
     QQ Guild: r48eajexth
     Discord Server: discord.gg/gqpR3bTSsP
       BiliBiliアカウント: @Phira官方
       QQ Guild: r48eajexth
       Discord Server: discord.gg/gqpR3bTSsP
-
+    
       最新情報を入手し、サポートを受けるためにQQ GuildまたはDiscordサーバーへの参加をお勧めします。
-
+    
       スタッフリスト（辞書順）
       開発
       { $development }
-
+    
       運営
       { $operations }
-
+    
       ドキュメント
       { $documentation }
-
+    
       アート
       { $art }
-
+    
       音楽
       { $music }
-
+    
       オーディオ
       { $audio }
-
+    
       コミュニティ管理
       { $community }
-
+    
       ローカライズ
       { $localization }
-
+    
     Phira Pro 派生版
     メンテナンス
     { $revision }
-
+    
     その他多くのボランティア譜面レビュアーの皆様に感謝します。完全なリストは https://phira.moe/staff をご覧ください。
 item-drag-protect = 黄ノーツ保護
 item-drag-protect-sub = 青ノーツ / Hold が early 側で、黄ノーツが現在時刻に 10ms 以上近い場合、黄ノーツごとに一度だけタップを受け取ります
@@ -249,7 +249,17 @@ item-aspect-ratio-sub = 16:9 や 1.7778 のような小数に対応
 aspect-invalid = 比率の形式が正しくありません（例: 16:9 や 1.7778）
 item-offset-indicator = 判定ずれバー
 item-offset-indicator-sub = プレイ中に早/遅のずれを示すバーを表示します
+item-timing-offset = 判定タイミングの数値表示
+item-timing-offset-sub = 直近の打鍵のずれとプレイ中の平均をミリ秒で表示します。
 item-app-icon = アプリアイコン
+item-app-icon-window-sub = ウィンドウ用の画像をインポートし、再起動することで適用します
+item-app-icon-launcher-sub = アプリアイコンを変更します
+item-app-icon-switch = 切り替え
+item-app-icon-applied = アプリアイコンを更新しました
+item-app-icon-shortcut = ホーム画面のカスタムショートカット
+item-app-icon-shortcut-done =
+    ショートカットの作成をします
+    ホーム画面で承認を求められた場合は承認してください
 item-app-icon-sub = アプリアイコンを変更。*再起動後に反映*
 item-app-icon-reset = アイコンを初期化
 item-app-bg = 背景画像／動画
