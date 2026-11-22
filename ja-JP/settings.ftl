@@ -24,7 +24,9 @@ item-limit-perfect = Perfect 判定幅
 item-limit-good = Good 判定幅
 item-limit-bad = Bad 判定幅
 item-hp-mode = 体力バー
-item-hp-mode-sub = バーが 0 になると失敗
+item-hp-mode-sub = バーが 0 になると失敗します
+item-hp-disable-healing = 体力回復を無効化
+item-hp-disable-healing-sub = 体力バーモードでノーツを正しく叩いても体力が回復しません
 item-hp-amount = ダメージ倍率
 item-hp-width = バーの長さ
 item-auto-retry = 自動リトライ回数
@@ -76,7 +78,7 @@ item-dc-pause = ダブルクリックでポーズ
 item-dhint = 多点タップサポート
 item-dhint-sub = 同時ノーツが強調表示されます
 item-opt = 最適化を優先
-item-opt-sub = パフォーマンスが向上しますが、動作が不安定になる可能性があります
+item-opt-sub = 不要な描画をさらに省略してフレームレートを上げます。一部の譜面で表示異常が出る場合があるため、問題があればオフにしてください。
 item-use-keyboard = キーボードを使用
 item-use-keyboard-sub = キーボード入力でプレイできます。有効にするとスコアはアップロードされません。
 item-prefer-reduced-motion = アニメーションを減らす
@@ -101,6 +103,8 @@ reset-settings-text = 設定ページのすべての項目（言語、テーマ�
 reset-settings-done = 設定を初期値に戻しました
 reset-settings-cancel = キャンセル
 reset-settings-confirm = 確定
+item-log-storage = ログの保存容量上限
+item-log-storage-sub = 上限に達すると古いログから自動で削除します。
 item-export-logs = ログをエクスポート
 item-export-logs-sub = 不具合の報告用に直近7日間のログをZIP形式でエクスポートします
 item-export-logs-button = エクスポート
@@ -113,51 +117,51 @@ item-refresh-rate-max = 最大：{ $rate } Hz
 about-content =
     Phira Pro v{ $version }
       Phira v{ $version }
-
+    
       PhiraはPhigrosにインスパイアされた非商業のコミュニティ主導のリズムゲームです。
-
+    
       本プロジェクトは非公式のプレイヤーによるプロジェクトであり、南京鸽游网络有限公司（Pigeon Games）および『Phigros』公式とは、許諾・協力・運営のいずれの関係も一切存在しません。
-
+    
     Phira Pro は公式 Phira を基にした非営利の非公式派生版です。
-
+    
     BiliBiliアカウント: @Phira官方
     QQ Guild: r48eajexth
     Discord Server: discord.gg/gqpR3bTSsP
       BiliBiliアカウント: @Phira官方
       QQ Guild: r48eajexth
       Discord Server: discord.gg/gqpR3bTSsP
-
+    
       最新情報を入手し、サポートを受けるためにQQ GuildまたはDiscordサーバーへの参加をお勧めします。
-
+    
       スタッフリスト（辞書順）
       開発
       { $development }
-
+    
       運営
       { $operations }
-
+    
       ドキュメント
       { $documentation }
-
+    
       アート
       { $art }
-
+    
       音楽
       { $music }
-
+    
       オーディオ
       { $audio }
-
+    
       コミュニティ管理
       { $community }
-
+    
       ローカライズ
       { $localization }
-
+    
     Phira Pro 派生版
     メンテナンス
     { $revision }
-
+    
     その他多くのボランティア譜面レビュアーの皆様に感謝します。完全なリストは https://phira.moe/staff をご覧ください。
 item-drag-protect = 黄ノーツ保護
 item-drag-protect-sub = 青ノーツ / Hold が early 側で、黄ノーツが現在時刻に 10ms 以上近い場合、黄ノーツごとに一度だけタップを受け取ります
@@ -166,11 +170,14 @@ item-flick-protect-sub = 青ノーツ / Hold が early 側で、赤ノーツが�
 item-combo-text = コンボ文字
 item-combo-text-sub = コンボ数の下に表示する文字（最大 16 文字）
 combo-text-default = 既定
-item-late-leniency = 遅押し補正
-item-late-leniency-sub = 遅押しの誤差をこれだけ差し引きます；0 = 早押しと完全に対称
+item-late-leniency = 入力遅延補正
+item-late-leniency-sub = 判定前に入力時刻を指定した時間だけ早めます
 item-judge-chart = 判定分布図
 item-judge-chart-sub = リザルトに判定タイミングの分布図を描画（早 ← → 遅）
-item-hp-scale = ライフバー倍率
+item-hp-capacity = 最大ライフ
+item-hp-failure-effect = ライフ切れ演出
+hp-failure-red-flash = 本家の演出
+hp-failure-slowdown = Phira Proの演出
 item-hp-color = ライフバーの色
 item-history = スコア履歴
 item-history-sub = 各プレイを端末内に保存：一覧 / 推移 / PB 比較 / 判定分布 / インポート・エクスポート
@@ -242,11 +249,21 @@ item-aspect-ratio-sub = 16:9 や 1.7778 のような小数に対応
 aspect-invalid = 比率の形式が正しくありません（例: 16:9 や 1.7778）
 item-offset-indicator = 判定ずれバー
 item-offset-indicator-sub = プレイ中に早/遅のずれを示すバーを表示します
+item-timing-offset = 判定タイミングの数値表示
+item-timing-offset-sub = 直近の打鍵のずれとプレイ中の平均をミリ秒で表示します。
 item-app-icon = アプリアイコン
+item-app-icon-window-sub = 导入图片作为窗口图标，重启后生效
+item-app-icon-launcher-sub = 切换应用内置的桌面图标
+item-app-icon-switch = 切换
+item-app-icon-applied = 应用图标已更新
+item-app-icon-shortcut = 自定义桌面快捷方式
+item-app-icon-shortcut-done = 已请求添加快捷方式，如有提示请在桌面确认
 item-app-icon-sub = アプリアイコンを変更。*再起動後に反映*
 item-app-icon-reset = アイコンを初期化
-item-app-bg = 背景
-item-app-bg-sub = メイン画面の背景を変更
+item-app-bg = 背景画像／動画
+item-app-bg-sub = メイン画面の背景を変更します。動画は無音で繰り返し再生されます。
+item-app-bg-crossfade = 背景動画のクロスフェード
+item-app-bg-crossfade-sub = 動画の終わりと次のループの冒頭を重ねて切り替えます
 item-app-bg-reset = 背景を初期化
 item-appearance-import-sub = メイン画面左下の立ち絵（透過 PNG 推奨）
 item-appearance-reset = 立ち絵を初期化
@@ -282,9 +299,9 @@ chart-import-label = 譜面を一括インポート
 chart-import-desc = 公式クライアントの一括エクスポートで作った zip をインポートします（単体の譜面パックでも可）。インポートした譜面はすぐにローカル譜面庫に表示されます
 chart-import-btn = ファイルを選んでインポート
 item-block-simple = 噪域の軽量描画
-item-block-simple-sub = 半透明の範囲のみを描画。ノイズ、タッチ演出、音楽フィルターを無効化。判定は変更しません
+item-block-simple-sub = 判定線のノイズ表現を簡略化して GPU 負荷を下げます。フレームレートの向上は譜面によります。判定ルールは変わりません。
 item-line-elision = 透明な判定線の省略
-item-line-elision-sub = 描画結果に影響しない完全に透明な通常の判定ラインを描画しません。デバッグ表示やカスタムマテリアルには従来の描画方式を使います。
+item-line-elision-sub = 完全に透明な判定線を描画せず、描画負荷を減らします。透明な判定線が多い譜面ほど効果があり、通常の譜面ではフレームレートの向上は限定的です。見た目は変わりません。
 experience = ユーザー設定
 font-display-size = フォントサイズ
 font-smallest = 80%
@@ -310,8 +327,8 @@ cover-editor = カバーエディタ
 cover-crop-help = ドラッグで位置を調整し、拡大・縮小で切り抜く範囲を決めます。破線は最小遮蔽範囲、実線は最大遮蔽範囲です。
 cover-cancel = キャンセル
 cover-apply = 保存
-item-shader-pre-render = シェーダーの事前レンダリング
-item-shader-pre-render-sub = 読み込み時にシェーダーを事前コンパイルし、静的なノイズ領域をキャッシュします。読み込みは長くなります。動的なエフェクトは引き続きリアルタイムで描画し、FPS の改善幅は譜面によって異なります。
+item-shader-pre-render = シェーダーの事前準備
+item-shader-pre-render-sub = 読み込み時にシェーダーをコンパイルし、静的ノイズをキャッシュしてゲーム中のシェーダー詰まりを減らします。読み込みは遅くなり、フレームレートの向上は譜面によります。
 judgement-presets = 判定プリセット
 preset-phigros = Phigros の判定
 preset-pro = Phira Pro 判定
@@ -337,7 +354,7 @@ preset-number-0 = Perfect+（ms）
 preset-number-1 = Perfect（ms）
 preset-number-2 = Good（ms）
 preset-number-3 = Bad（ms）
-preset-number-4 = Late 側の補正（ms）
+preset-number-4 = 入力遅延補正（ms）
 preset-number-5 = Drag の判定幅（ms）
 preset-number-6 = Flick の判定幅（Perfect に対する倍率）
 preset-number-7 = Tap / Hold の判定の半幅（ワールド座標）
@@ -402,6 +419,7 @@ preset-colors-sub = パレットから好きな色を選択できます。リセ
 preset-color-default = リソースパック
 item-desktop-fps = 最大フレームレート
 item-desktop-fps-sub = 即座に適用されます。デフォルトではディスプレイのリフレッシュレートに従います
+item-desktop-fps-linux-sub = 既定ではディスプレイに同期します。上限の解除にはグラフィックスドライバーの対応が必要です
 item-desktop-fps-auto = オート
 color-original = オリジナル
 color-current = 現在
@@ -424,5 +442,32 @@ item-early-late-sub = Perfect+ / Perfect 以外の有効な判定で、入力が
 item-early-late-position = 表示位置
 item-early-late-indicator = 判定タイミングバーの下
 item-early-late-bottom = プレイ画面の下端
-item-font-atlas-pool = フォントアトラスのプール
-item-font-atlas-pool-sub = グリフアトラスを複数バージョンで切り替え、HUD テキストが GPU のサンプリング中のテクスチャへ書き込まないようにします。画素とレイアウトは変わりません。テキスト描画の診断時のみオフにしてください。
+item-font-atlas-pool = フォントアトラスの切り替え
+item-font-atlas-pool-sub = HUD テキスト更新時の引っかかりと長いフレームを減らします。平均フレームレートの向上は端末と HUD 更新頻度によりますが、低スペック端末ではカクつきの改善が分かりやすいです。見た目とレイアウトは変わりません。既定でオン。
+item-effect-render-optimized = エフェクト描画の最適化
+item-effect-render-optimized-sub = シェーダーと全画面合成の負荷を減らします。エフェクトが多い譜面ほど効果があり、通常の譜面では向上が限定的です。オフにすると元のシェーダーに戻ります。シェーダー/マテリアルの変更は譜面の再読み込み後に反映されます。
+performance = パフォーマンス
+performance-quality = 画質
+performance-fps = フレームレートとリフレッシュレート
+performance-render = レンダリング最適化
+performance-interface = インターフェース
+performance-preset = 画質プリセット
+performance-preset-sub = 画質・パーティクル・アンチエイリアスをまとめて切り替えます。低負荷は低スペック端末向けです。
+performance-preset-low = 低負荷
+performance-preset-standard = 標準
+performance-preset-high = 高画質
+item-particle = ヒットパーティクル
+item-particle-sub = ヒット時にパーティクルを表示します。オフにするとフレームレートが大きく上がる場合があり、低スペック端末ではオフ推奨です。
+item-noise-glow = ノイズグロー
+item-noise-glow-sub = 判定線のノイズグロー。オフにするとフレームレートが上がり、低スペック端末ほど効果的です。
+item-noise-refraction = ノイズ屈折
+item-noise-refraction-sub = 判定線のノイズ屈折。オフにするとフレームレートが上がり、低スペック端末ほど効果的です。
+item-sample-count = アンチエイリアスサンプル
+item-sample-count-sub = 1× / 2× / 4×。高いほど滑らかになりますが GPU 負荷が大きくなります。この項目は性能への影響が特に大きいです。
+item-fxaa = FXAA
+item-aa = アンチエイリアス
+item-aa-sub = 輪郭を滑らかにしますが、特に性能への影響が大きい項目です。低スペック端末ではオフ、または FXAA のみを推奨します。
+item-aa-off = オフ
+item-aa-fxaa = FXAA
+item-aa-msaa2 = MSAA 2×
+item-aa-msaa4 = MSAA 4×
