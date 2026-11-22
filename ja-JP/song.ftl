@@ -92,6 +92,7 @@ review-edit-tags-done = タグが更新されました
 mods = プレイ MOD
 mods-autoplay = オートプレイ
 mods-autoplay-sub = これを有効にすると、リザルトの記録が無効になります
+flash-autoplay-unrated = オートプレイが有効です。このプレイのスコアは送信されず、判定設定には初期値が使われます。
 mods-flip-x = ミラー
 mods-flip-x-sub = 譜面を左右反転します。
 mods-fade-in = フェードイン
